@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plabon</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            background: black;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        .box {
+            color:aliceblue;
+            background: #262626;
+            padding: 25px;
+            margin-bottom: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <p>1 to 001, 23 to 023, 123 to 123</p>
+        <code>
+            let padToThree = (number) => (number <= 999 ? `00${number}`.slice(-3) : number);
+        </code>
+    </div>
+    <div class="box">
+        <p>https://assets.pokemon.com/assets/cms2/img/pokedex/detail/${id}.png to api image source</p>
+        <code>
+            const POKE_API = 'https://assets.pokemon.com/assets/cms2/img/pokedex/detail/';,<br>
+            let imgSrc = `${POKE_API}${padToThree(this.props.id)}.png`;
+        </code>
+        <p>Look at <a href="pokemon.html">Pokemon</a></p>
+    </div>
+    <div class="box">
+        <p>Random item from list</p>
+        <code>
+            const moods = ['x','y','z'];<br>
+            moods[Math.floor(Math.random()*moods.length)]
+        </code>
+    </div>
+</body>
+</html>
