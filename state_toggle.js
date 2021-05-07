@@ -553,7 +553,7 @@ class CheckUserAge extends React.Component {
     // Change code below this line
     this.state =({
       input: '',
-      useAge: ''
+      userAge: ''
     })
 
     // Change code above this line
