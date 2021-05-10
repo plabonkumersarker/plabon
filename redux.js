@@ -12,12 +12,12 @@ const reducer = (state = 5) => {
 
   //Get State from the Redux Store
 
-  const store = Redux.createStore(
-    (state = 5) => state
-  );
-  
-  // Change code below this line
-  
-  const currentState = store.getState();
+const store = Redux.createStore(
+(state = 5) => state
+);
+
+// Change code below this line
+
+const currentState = store.getState();
 
   
