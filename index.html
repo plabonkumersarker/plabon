@@ -55,5 +55,23 @@
     <div class="box">
         <p>Look at <a href="https://github.com/plabonkumersarker/plabon/blob/main/react_redux.js" target="_blank">React-Redux Exercise</a></p>
     </div>
+    <div class="box">
+        <p>Ubuntu Display Resize</p>
+        1) xrandr 
+        //remember the monitor name(example - DP-1 or HDMI-1)
+
+        2)  cvt 1366 768
+        //write your resolution seperated by space after cvt  
+        //it will generate code for you
+
+        Generated code: "1368x768_60.00"   85.25  1368 1440 1576 1784  768 771 781 798 -hsync +vsync
+
+        3) sudo xrandr --newmode "1368x768_60.00"   85.25  1368 1440 1576 1784  768 771 781 798 -hsync +vsync 
+        // paste the generated code after newmode
+        //you have write down your password after that
+
+        4)sudo xrandr --addmode DP-1 "1368x768_60.00"
+        //addmode [space] [your monitor name] [space] [your resolution that you want]
+    </div>
 </body>
 </html>
